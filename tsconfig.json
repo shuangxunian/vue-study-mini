@@ -1,6 +1,7 @@
 {
 	// 编辑器配置
 	"compilerOptions": {
+    "baseUrl": ".",
 		// 根目录
 		"rootDir": ".",
 		// 严格模式标志
@@ -28,7 +29,10 @@
 		// 禁用 sourceMap
 		"sourceMap": false,
 		// https://www.typescriptlang.org/tsconfig#lib
-		"lib": ["esnext", "dom"]
+		"lib": ["esnext", "dom"],
+    "paths": {
+      "@vue/*": ["packages/*/src"]
+    }
 	},
 	// 入口
 	"include": [
